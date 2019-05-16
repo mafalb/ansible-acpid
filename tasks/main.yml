@@ -1,0 +1,14 @@
+---
+
+- name: acpid is present
+  package:
+    name: "{{ acpid.package }}"
+    state: present
+
+- name: acpid is running
+  service:
+    name: "{{ acpid.service }}"
+    state: started
+    enabled: true
+
+...

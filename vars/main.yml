@@ -1,0 +1,4 @@
+---
+acpid:
+  package: acpid
+  service: acpid
